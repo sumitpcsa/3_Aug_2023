@@ -1,0 +1,119 @@
+* {
+  background: rgb(105, 61, 237);
+  margin: 0;
+  padding: 0;
+}
+
+.outer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
+  transition: all 2s;
+  visibility: visible;
+}
+
+#outer.hide {
+  visibility: hidden;
+  position: fixed;
+  bottom: 5px;
+  left: -500px;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 0;
+}
+
+.outer img, .inner img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.outer p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  margin: 0 auto;
+  background: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px rgb(0 255 0);
+}
+
+.outer h5 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6%;
+  margin: 0 auto;
+  background: none;
+  text-align: center;
+}
+
+.outer button {
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border: none;
+  background: red;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.open-card {
+  display: none;
+}
+
+.inner .close i {
+  border: 2px solid #000;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  padding: 1px 7px;
+  font-size: 28px;
+  margin: 5px;
+}
+
+.inner .whatsapp i {
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  background: none;
+  color: #008000;
+  font-size: 50px;
+}
+
+.inner .call i {
+  position: absolute;
+  top: 35%;
+  right: 1%;
+  background: none;
+  color: #1F3D9D;
+  font-size: 50px;
+}
+
+.sticker {
+  position: absolute;
+}
+
+.sticker img {
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
